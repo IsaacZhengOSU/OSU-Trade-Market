@@ -1,0 +1,86 @@
+<header>
+    <div class="headerSec">
+        <h1 class="header-title">OSU Trade Market</h1>
+    </div>
+    <div id="greeting">
+    </div>
+</header>
+
+<div class="new-post-this-week">
+    <h2>New Post This Week</h2>
+    <div id="new-post-this-week-contents">
+        <button class="imgLeft" onclick="plusDivs(-1)">&#10094;</button>
+        <div id="new-post-this-week-picture"><img class="mySlides" src="./img/pccase.jpg"></div>
+        <div id="new-post-this-week-picture"><img class="mySlides" src="./img/smartphone.jpg"></div>
+        <div id="new-post-this-week-picture"><img class="mySlides" src="./img/desk.jpg"></div>
+        <button class="imgRight" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+</div>
+
+<main class="post">
+    <aside id="aside">
+        <div class="filter-component">
+            <fieldset>
+                <legend>Filter</legend>
+                <div id="search-component">
+                    <label for="name">name</label><br>
+                    <input type="text" id="searchName"><br>
+                </div><br>
+                <div id="search-component">
+                    <label for="priceRange">price range</label><br>
+                    <p>min:</p><input type="text" id="searchMin" name="fname" value=""><br>
+                    <p>max:</p><input type="text" id="searchMax" name="fname" value=""><br>
+                </div>
+            </fieldset>
+            <button id="searchButton" class="filterUpdate">search</button><br>
+        </div>
+        <div class="filter-component">
+            <label for="">News</label>
+            <div id="scrollBox">
+                <span>
+                    This is a website for OSU students to sell or trade things.
+                    We don't hold any currency transition. We just provide a
+                    platform for students to post their information.
+                </span>
+            </div>
+        </div>
+        <div class="filter-component">
+            <label for="download"> Download listed items</label>
+            <form id="homeForm" action="/home" method="POST">
+            </form>
+        </div>
+    </aside>
+    <section id="display">
+        <div class="items" name="PCcase" price=50>
+            <div class="insideBox">
+                <div class="pic">
+                    <img class="img" src="./img/pccase.jpg" alt="">
+                </div>
+                <div>
+                    <a href="http://localhost:8080/pccase">PC Case $50</a>                    
+                </div>
+            </div>
+        </div>
+        <div class="items" name="smartphone" price=500>
+            <div class="insideBox">
+                <div class="pic">
+                    <img class="img" src="./img/smartphone.jpg" alt="" style="width:100%">
+                </div>
+                <div>
+                    <a href="http://localhost:8080/smartphone">smartphone $500</a><br>
+                </div>
+            </div>
+        </div>
+        <div class="items" name="desk" price=20>
+            <div class="insideBox">
+                <div class="pic">
+                    <img class="img" src="./img/desk.jpg" alt="" style="width:100%">
+                </div>
+                <div>
+                    <a href="http://localhost:8080/desk">desk $20</a><br>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="./js/script.js"></script>

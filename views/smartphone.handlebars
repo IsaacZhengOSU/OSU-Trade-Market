@@ -1,0 +1,70 @@
+<header>
+    <div class="headerSec">
+        <h1 class="header-title">OSU Trade Market</h1>
+    </div>
+</header>
+<main class="post">
+    <aside id="aside">
+        <div class="filter-component">
+            <p>Other Items:</p>
+            <a href="http://localhost:8080/pccase">PC Case</a><br>
+            <a href="http://localhost:8080/desk">desk</a>
+        </div>
+    </aside>
+    <div class="insideBox">
+        <div class="item-detail">
+            <h1>Smartphone</h1>
+        </div>
+        <div class="item-detail">
+            <img src="./img/smartphone.jpg" alt="">
+        </div>
+        <div class="item-detail">
+            <p>This is a use smartphone looking for buyers or traders.
+                Comes with items below:
+                <span>
+                    <ul>
+                        <p>original box</p>
+                    </ul>
+                    <ul>
+                        <P>smartphone</P>
+                    </ul>
+                    <ul>
+                        <p>original charge cable</p>
+                    </ul>
+                    <ul>
+                        <p>original charger</p>
+                    </ul>
+                </span>
+            </p>
+        </div>
+        <div class="item-detail">
+            <a href="http://www.google.com/search?q=smartphone">Search this item on Google</a>
+        </div>
+        <div class="item-detail">
+            <a href="http://localhost:8080/home">back to home page</a>
+        </div>
+    </div>
+    <aside id="aside">
+        <div class="filter-component">
+            <form action="/tradeReq" method="POST">
+                <input type="hidden" name="from" value="smartphone">
+                <label for="name">Send request to seller</label><br>
+                <input type="checkbox" name="purchase" value="purchase">
+                <label for="vehicle1"> buying</label><br>
+                <input type="checkbox" name="trade" value="trade">
+                <label for="vehicle2"> trading</label><br>
+                <input type="submit" name="report" value="Submit">
+            </form>
+        </div>
+        <div class="filter-component">
+            <ul>
+                <form action="/report" method="POST">
+                    <input type="hidden" name="name", value="smartphone">
+                    <label for="report">report this post</label>
+                    <input type="submit" name="report" value="report">
+                </form>
+            </ul>
+        </div>
+    </aside>
+</main>
+<script src="./js/script2.js"></script>

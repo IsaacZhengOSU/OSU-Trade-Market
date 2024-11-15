@@ -1,0 +1,16 @@
+<header>
+  <div class="headerSec">
+    <h1 class="header-title">OSU Trade Market</h1>
+  </div>
+</header>
+<main>
+  <div>
+    <h1>You send following request to seller:</h1>
+    {{#if purchase}}
+    <ul><h1>{{{purchase}}}</h1></ul>
+    {{/if}}
+    {{#if trade}}
+    <ul><h1>{{{trade}}}</h1></ul>
+    {{/if}}
+  </div>
+</main>
